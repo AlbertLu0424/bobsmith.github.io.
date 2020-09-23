@@ -1,0 +1,389 @@
+﻿
+
+<!DOCTYPE html>
+
+<html id="FormHtml" xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-tw">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head id="Head1"><script src='Scripts/jquery-1.12.4.min.js'></script>
+<script src='Scripts/jquery.cookie.js'></script>
+<script src='Scripts/jUtil.js'></script>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAo1MAXwJfl0q3fNU_5QyogEgyecOICpWs&libraries=places,drawing'></script>
+<script src='Scripts/jGMap.js'></script>
+<script src='Scripts/fancybox/jquery.fancybox.js'></script>
+<link rel='stylesheet' type='text/css'  href='Scripts/fancybox/jquery.fancybox.css'> 
+<script src='Scripts/lightGallery/js/lightgallery-all.min.js'></script>
+<link rel='stylesheet' type='text/css'  href='Scripts/lightGallery/css/lightgallery.min.css'> 
+<script src='Scripts/J_Pager.js'></script>
+<script  src='Scripts/Chart/highcharts.js'></script> 
+<script  src='Scripts/Chart/map.src.js'></script> 
+<script  src='Scripts/Chart/highcharts_theme.js'></script> 
+<script  src='Scripts/Chart/tw-all.js'></script> 
+<link rel='stylesheet' type='text/css'  href='Scripts/Chart/highcharts.css'> 
+<script  src='Scripts/jquery.mousewheel.min.js'></script> 
+<script  src='Scripts/jquery.touchwipe.min.js'></script> 
+<script  src='js/airdatepicker/datepicker.min.js'></script> 
+<script  src='js/airdatepicker/datepicker.zh-tw.js'></script> 
+<script  src='js/airdatepicker/datepicker.en.js'></script> 
+<link rel='stylesheet' type='text/css'  href='js/airdatepicker/datepicker.min.css'> 
+<script>var CCMS_WWWURL='https://webpageprodvm.ntu.edu.tw/psctest5';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='372';</script><title>
+	國立台灣大學人口與性別研究中心
+</title><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="DC.Title" content="" />
+<meta name="DC.Subject" content="" />
+<meta name="DC.Creator" content="" />
+<meta name="DC.Publisher" content="" />
+<meta name="DC.Date" content="" />
+<meta name="DC.Type" content="" />
+<meta name="DC.Identifier" content="" />
+<meta name="DC.Description" content="" />
+<meta name="DC.Contributor" content="" />
+<meta name="DC.Format" content="" />
+<meta name="DC.Relation" content="" />
+<meta name="DC.Source" content="" />
+<meta name="DC.Language" content="" />
+<meta name="DC.Coverage.t.min" content="" />
+<meta name="DC.Coverage.t.max" content="" />
+<meta name="DC.Rights" content="" />
+<meta name="Category.Theme" content="" />
+<meta name="Category.Cake" content="" />
+<meta name="Category.Service" content="" />
+<meta name="DC.Keywords" content="" />
+<link id="likCss" rel="stylesheet" media="screen" href="css/global.css?20200923105034" type="text/css" /><link id="litcss_sys_index" href="css/sys_index.css" rel="stylesheet" type="text/css" />
+
+      <script>
+        var  ajaxjsop = function(){
+  let _ajaxjsoplist = [];
+  let _ajaxjsoplist_index = 0;
+  let isStart = false;
+  let Next = function(){
+    console.log('Next');
+    _ajaxjsoplist_index = _ajaxjsoplist_index +1;
+
+      if(_ajaxjsoplist.length >= _ajaxjsoplist_index){
+         _ajaxjsoplist[_ajaxjsoplist_index-1]();
+         }
+
+  };
+  let Start = function(){
+    if(!isStart){
+      console.log('Start');
+      isStart = true;
+      Next();
+    }
+  };
+  return {
+      List :_ajaxjsoplist,
+      Next : Next,
+      Start: Start
+  };
+}();
+
+
+    </script>
+<meta property="og:title" content="國立台灣大學人口與性別研究中心" >
+<meta property="og:type" content="article" >
+<meta property="og:url" content="https://webpageprodvm.ntu.edu.tw/psctest5/Default.aspx" >
+<meta property="og:site_name" content="國立台灣大學人口與性別研究中心" >
+<style>[id*='Group_96854_ysBoiCAYEh'] > .in { margin-top:0px !important; margin-bottom:0px !important; margin-left:0px !important; margin-right:0px !important;}[id*='Group_96854_ysBoiCAYEh'] > .bg-drop-layout > .in { margin-top:0px !important; margin-bottom:0px !important; margin-left:0px !important; margin-right:0px !important;}@media (min-width: 960px) {  [id*='Group_96856_MGyrnGSstq']{width:60% !important; } }@media (min-width: 960px) {  [id*='Group_96857_JYxIFuNWdD']{width:40% !important; } }[id*='Group_96857_JYxIFuNWdD'] > .in { margin-top:30px !important; margin-bottom:30px !important; margin-left:60px !important; margin-right:30px !important;}[id*='Group_96857_JYxIFuNWdD'] > .bg-drop-layout > .in { margin-top:30px !important; margin-bottom:30px !important; margin-left:60px !important; margin-right:30px !important;}@media (min-width: 960px) {  [id*='Group_96858_jFJhuEvHHs']{width:100% !important; } }@media (min-width: 960px) {  [id*='Group_96859_ixkycuWumE']{width:40% !important; } }[id*='Group_96859_ixkycuWumE'] > .in { margin-top:15px !important; margin-bottom:15px !important; margin-left:15px !important; margin-right:15px !important;}[id*='Group_96859_ixkycuWumE'] > .bg-drop-layout > .in { margin-top:15px !important; margin-bottom:15px !important; margin-left:15px !important; margin-right:15px !important;}@media (min-width: 960px) {  [id*='Group_96860_hBEMqrxsGx']{width:60% !important; } }</style><style>
+        .for_accessibility a {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 99;
+            width: 1px;
+            height: 1px;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #000;
+        }
+            .for_accessibility a:focus {
+                width: auto;
+                height: auto;
+                padding: 6px;
+                background-color: #fff;
+            }
+        .for_accessibility div {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: transparent;
+            opacity: .1
+        }
+            .for_accessibility h1, .for_accessibility h2 {
+                visibility: hidden;
+                margin: 0;
+            }
+    </style><style type="text/css">.ft-logo {
+	display: inline-block;
+	
+}
+
+.ft-logo >img {
+	max-width: 300px;
+}
+
+.ft-ct {
+	display: inline-block;
+	padding-left: 30px;
+	vertical-align: middle;
+}
+
+.ft-ct >p {
+		margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+
+	.ft-logo >img{
+		padding: 8px;
+	    box-sizing: border-box;
+	}
+	.ft-ct  {
+		padding-left: 8px;
+	}
+
+	.ft-ct >p {
+		font-size: .9em;
+
+	}
+
+}
+</style></head>
+<body id="Formbody" data-js="false"><div class="for_accessibility">
+    
+    <a href="#base-content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <div>
+        <h1>psctest5</h1>        <h2>psctest5</h2>        <nav></nav>
+    </div>
+    <script>
+        var $a = $('.for_accessibility a');
+        $a.on('click', function (evt) {
+            var $href = $($(this).attr('href')),
+                $target = $href.find('a').eq(0).get(0);
+            setTimeout(function () { try { $target.focus(); } catch (e) { } }, 0);
+        });
+    </script>
+</div>
+<script> document.body.setAttribute("data-js", "true");</script>
+       
+    <form method="post" action="./Default.aspx?Create=1" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODAwNTg5MTYzD2QWAgIBD2QWAgIBD2QWBgIDDxYCHgRUZXh0Bd4GPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9dXRmLTgiIC8+CjxtZXRhIG5hbWU9IkRDLlRpdGxlIiBjb250ZW50PSIiIC8+CjxtZXRhIG5hbWU9IkRDLlN1YmplY3QiIGNvbnRlbnQ9IiIgLz4KPG1ldGEgbmFtZT0iREMuQ3JlYXRvciIgY29udGVudD0iIiAvPgo8bWV0YSBuYW1lPSJEQy5QdWJsaXNoZXIiIGNvbnRlbnQ9IiIgLz4KPG1ldGEgbmFtZT0iREMuRGF0ZSIgY29udGVudD0iIiAvPgo8bWV0YSBuYW1lPSJEQy5UeXBlIiBjb250ZW50PSIiIC8+CjxtZXRhIG5hbWU9IkRDLklkZW50aWZpZXIiIGNvbnRlbnQ9IiIgLz4KPG1ldGEgbmFtZT0iREMuRGVzY3JpcHRpb24iIGNvbnRlbnQ9IiIgLz4KPG1ldGEgbmFtZT0iREMuQ29udHJpYnV0b3IiIGNvbnRlbnQ9IiIgLz4KPG1ldGEgbmFtZT0iREMuRm9ybWF0IiBjb250ZW50PSIiIC8+CjxtZXRhIG5hbWU9IkRDLlJlbGF0aW9uIiBjb250ZW50PSIiIC8+CjxtZXRhIG5hbWU9IkRDLlNvdXJjZSIgY29udGVudD0iIiAvPgo8bWV0YSBuYW1lPSJEQy5MYW5ndWFnZSIgY29udGVudD0iIiAvPgo8bWV0YSBuYW1lPSJEQy5Db3ZlcmFnZS50Lm1pbiIgY29udGVudD0iIiAvPgo8bWV0YSBuYW1lPSJEQy5Db3ZlcmFnZS50Lm1heCIgY29udGVudD0iIiAvPgo8bWV0YSBuYW1lPSJEQy5SaWdodHMiIGNvbnRlbnQ9IiIgLz4KPG1ldGEgbmFtZT0iQ2F0ZWdvcnkuVGhlbWUiIGNvbnRlbnQ9IiIgLz4KPG1ldGEgbmFtZT0iQ2F0ZWdvcnkuQ2FrZSIgY29udGVudD0iIiAvPgo8bWV0YSBuYW1lPSJDYXRlZ29yeS5TZXJ2aWNlIiBjb250ZW50PSIiIC8+CjxtZXRhIG5hbWU9IkRDLktleXdvcmRzIiBjb250ZW50PSIiIC8+CmQCBA8WAh4EaHJlZgUnL3BzY3Rlc3Q1L2Nzcy9nbG9iYWwuY3NzPzIwMjAwOTIzMTA1MDM0ZAIFDxYCHwEFGy9wc2N0ZXN0NS9jc3Mvc3lzX2luZGV4LmNzc2RkPEepK6OyOlbdTEj2GyEVQykZSDw=" />
+</div>
+ <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;en&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器似乎不支援 JavaScript 語法，但沒關係，這並不會影響到內容的陳述。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl   ( )放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt   左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl   p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="5"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></h3></div></div><div class="ct"><div class="in"> <div class="area-form search" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a    title="search"   >search</a></span></h4></div></div><div class="ct"><div class="in"><div class="fieldset">
+  <span class="search"><input data-search="btn_3b53471021944e1d83b15076f09c5c22" type="search" placeholder="Search" title="搜尋"></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' data-search="btn_3b53471021944e1d83b15076f09c5c22" title="搜尋" >搜尋</a></span><a href="Advanced_Search.html" style='display:none;' title='搜尋' >搜尋</a>
+</div>
+<div class="list">
+  <ul data-index="1" data-child="0">
+  </ul>
+</div>
+<script >
+$(function () {
+    $('[data-search="3b53471021944e1d83b15076f09c5c22"]').on("keydown", function (event) {
+        if (event.which == 13) {
+             doSearch($('#btn_3b53471021944e1d83b15076f09c5c22'));
+            return false;
+        }
+    });
+});
+</script>
+</div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
+  <li data-index="1" class="advanced"><span><a target="_blank" class='AS_btn' href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+ <script>
+ if ($('.AS_btn').attr('href').indexOf('&as_sitesearch=') > -1){
+}else{
+ $('.AS_btn').attr('href',$('.AS_btn').attr('href') + '&as_sitesearch=' + window.location.origin);
+}
+</script>
+</ul>
+</div></div></div></div> <div class="list-text share" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></h4></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="plurk"  >		<span  ><a   href="javascript: void(window.open('http://www.plurk.com/?qualifier=shares&status='.concat(encodeURIComponent(location.href)) ));"   title="Share toPlurk[另開新視窗]"   target="_self"  >Plurk</a></span></li><li   data-index="3"  class="twitter"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to twitter[另開新視窗]"   target="_self"  >Twitter</a></span></li><li   data-index="4"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="5"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="list-text link" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></h4></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  >		<span  ><a   href="Default.html"   title="回首頁"   target="_self"  >回首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="https://www.ntu.edu.tw/"   title="[另開新視窗]臺大首頁[另開新視窗]"   target="_blank"  >臺大首頁</a></span></li><li   data-index="3"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li><li   data-index="4"  >		<span  ><a   href="mailto:"   title="聯絡資訊"   target="_self"  >聯絡資訊</a></span></li><li   data-index="5"  >		<span  ><a   href=""   title="[另開新視窗]雙語詞彙[另開新視窗]"   >雙語詞彙</a></span></li></ul>
+</div></div></div></div> <div class="group-list nav" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="4" data-type="4" data-child="7"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="7"><li data-index="1"> <div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cp_n_19332.html"      title="單位簡介"   >單位簡介</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  >		<span  ><a   href="cp_n_19332.html"      title="中心簡介"   >中心簡介</a></span></li><li   data-index="2"  >		<span  ><a   href="cp_n_19337.html"      title="中心架構"   >中心架構</a></span></li><li   data-index="3"  >		<span  ><a   href="cp_n_19338.html"      title="中心成員"   >中心成員</a></span></li><li   data-index="4"  >		<span  ><a   href="cp_n_19340.html"      title="聯絡方式"   >聯絡方式</a></span></li><li   data-index="5"  >		<span  ><a   href="cp_n_19341.html"      title="中心簽屬MOU"   >中心簽屬MOU</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="2"> <div class="group nav" data-index="2" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cp_n_19352.html"      title="中心工作"   >中心工作</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div></li><li data-index="3"> <div class="group nav" data-index="3" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="News_n_19324_sms_26979.html"      title="最新消息"   >最新消息</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="News_n_19324_sms_26979.html"      title="最新消息"   >最新消息</a></span></li><li   data-index="2"  >		<span  ><a   href="News_n_19325_sms_26986.html"      title="人口相關新聞"   >人口相關新聞</a></span></li><li   data-index="3"  >		<span  ><a   href="News_n_19327_sms_26987.html"      title="近期活動"   >近期活動</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="4"> <div class="group nav" data-index="4" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/program/"      title="課程資訊"   >課程資訊</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/program/"      title="人口學分學程"   >人口學分學程</a></span></li><li   data-index="2"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/wrp_program/01ann/main.htm"      title="婦女與性別研究學分學程 "   >婦女與性別研究學分學程 </a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="5"> <div class="group nav" data-index="5" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/jps/index.html"      title="出版品"   >出版品</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="8"><li   data-index="1"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/jps/index.html"      title="人口學刊"   >人口學刊</a></span></li><li   data-index="2"  >		<span  ><a   href="https://jwgs.psc.ntu.edu.tw/"      title="女學學誌"   >女學學誌</a></span></li><li   data-index="3"  >		<span  ><a   href="http://gender.psc.ntu.edu.tw/Gender/page/page_04.php"      title="婦研縱橫"   >婦研縱橫</a></span></li><li   data-index="4"  >		<span  ><a   href="http://homepage.ntu.edu.tw/~r07342001/"      title="線上資源"   >線上資源</a></span></li><li   data-index="5"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/gis.htm"      title="人口地圖集"   >人口地圖集</a></span></li><li   data-index="6"  >		<span  ><a   href="http://www.psc.ntu.edu.tw/censusmap/"      title="台灣戰後人口普查地圖集(1956-2010) "   >台灣戰後人口普查地圖集(1956-2010) </a></span></li><li   data-index="7"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/notices/001/"      title="人口筆記書"   >人口筆記書</a></span></li><li   data-index="8"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/paper.htm"      title="人口中心電子報"   >人口中心電子報</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="6"> <div class="group nav" data-index="6" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cl_n_21391.html"      title="獎助金"   >獎助金</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  >		<span  ><a   href="001/Upload/372/relfile/0/21392/b88487a8-167f-49e4-8763-f8d6d3b15239.pdf"      title="[另開新視窗]申請辦法.pdf"   target="_blank"  >申請辦法</a></span></li><li   data-index="2"  >		<span  ><a   href="001/Upload/372/relfile/0/21393/6da75dd4-51ca-46db-9496-819769054df8.pdf"      title="[另開新視窗]歷年獲獎名單.pdf"   target="_blank"  >歷年獲獎名單</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="7"> <div class="group nav" data-index="7" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cl_n_21762.html"      title="相關網站"   >相關網站</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  >		<span  ><a   href="cp_n_21765.html"      title="相關系所"   >相關系所</a></span></li><li   data-index="2"  >		<span  ><a   href="cp_n_21766.html"      title="政府單位"   >政府單位</a></span></li><li   data-index="3"  >		<span  ><a   href="cp_n_21767.html"      title="研究機構"   >研究機構</a></span></li><li   data-index="4"  >		<span  ><a   href="cp_n_21768.html"      title="國際組織"   >國際組織</a></span></li><li   data-index="5"  >		<span  ><a   href="cp_n_21769.html"      title="國際訪客資源"   >國際訪客資源</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li></ul></div></div></div></div> <div class="list-text link" data-index="5" data-type="0"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></h4></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-extend" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></h4></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="plurk"  >		<span  ><a   href="javascript: void(window.open('http://www.plurk.com/?qualifier=shares&status='.concat(encodeURIComponent(location.href)) ));"   title="Share toPlurk[另開新視窗]"   target="_self"  >Plurk</a></span></li><li   data-index="3"  class="twitter"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to twitter[另開新視窗]"   target="_self"  >Twitter</a></span></li><li   data-index="4"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="5"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div data-func="{&#39;anchor&#39;:{}}" class="simple-text btn" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#" title="back to top[連結]">back to top</a></span></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_U" id="Accesskey_U" accesskey="U" title="上方選單連結區，此區塊列有本網站的主要連結">:::</a></span></div></div></div></div> <div class="group default top-info" data-func="{&#39;hud&#39;:{}}" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></h4></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  >		<span  ><a   href="Default.html"   title="回首頁"   target="_self"  >回首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="https://www.ntu.edu.tw/"   title="[另開新視窗]臺大首頁[另開新視窗]"   target="_blank"  >臺大首頁</a></span></li><li   data-index="3"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li><li   data-index="4"  >		<span  ><a   href="mailto:"   title="聯絡資訊"   target="_self"  >聯絡資訊</a></span></li><li   data-index="5"  >		<span  ><a   href=""   title="[另開新視窗]雙語詞彙[另開新視窗]"   >雙語詞彙</a></span></li></ul>
+</div></div></div></div> <div class="list-text font-size" data-func="{&#39;fontSize&#39;:{&#39;defaultItem&#39;: &#39;medium&#39;},&#39;toggleBtn&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></h4></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="group default msg-tool" data-func="{&#39;toggleBtn&#39;:{}}" data-index="3" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a    title="search"   >search</a></span></h4></div></div><div class="ct"><div class="in"><div class="fieldset">
+  <span class="search"><input data-search="btn_e03fb59d6bd04584ad9f9035b4a9a2ba" type="search" placeholder="Search" title="搜尋"></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' data-search="btn_e03fb59d6bd04584ad9f9035b4a9a2ba" title="搜尋" >搜尋</a></span><a href="Advanced_Search.html" style='display:none;' title='搜尋' >搜尋</a>
+</div>
+<div class="list">
+  <ul data-index="1" data-child="0">
+  </ul>
+</div>
+<script >
+$(function () {
+    $('[data-search="e03fb59d6bd04584ad9f9035b4a9a2ba"]').on("keydown", function (event) {
+        if (event.which == 13) {
+             doSearch($('#btn_e03fb59d6bd04584ad9f9035b4a9a2ba'));
+            return false;
+        }
+    });
+});
+</script>
+</div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
+  <li data-index="1" class="advanced"><span><a target="_blank" class='AS_btn' href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+ <script>
+ if ($('.AS_btn').attr('href').indexOf('&as_sitesearch=') > -1){
+}else{
+ $('.AS_btn').attr('href',$('.AS_btn').attr('href') + '&as_sitesearch=' + window.location.origin);
+}
+</script>
+</ul>
+</div></div></div></div></div></div></div></div></div></div></div></div> <div class="group default info" data-func="{&#39;hud&#39;:{}}" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text major-logo" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="Default.html" title="回首頁">國立台灣大學人口與性別研究中心</a></span></div></div></div></div> <div class="group-list nav" data-func="{&#39;majorNavHorizontal&#39;:{},&#39;setNavWidth&#39;:{}}" data-index="2" data-type="4" data-child="7"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="7"><li data-index="1"> <div id="Group_94626_gcRoEPFKEf" data-Margin_right="" data-sort="" data-bgColor="" data-AddParentGroup="" data-GroupSN="94626" data-WidthDeskTop="" data-anchor="" data-tabType="3" class="group nav" data-index="1" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cp_n_19332.html"      title="單位簡介"   >單位簡介</a></span></h3></div></div><div class="ct"><div class="in"> <div id="Group_94627_UKiqiwgIrr" data-SitesModuleSN="75" data-Margin_right="" data-sort="2" data-bgColor="" data-AddParentGroup="" data-GroupSN="94627" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="list-text nav" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  >		<span  ><a   href="cp_n_19332.html"      title="中心簡介"   >中心簡介</a></span></li><li   data-index="2"  >		<span  ><a   href="cp_n_19337.html"      title="中心架構"   >中心架構</a></span></li><li   data-index="3"  >		<span  ><a   href="cp_n_19338.html"      title="中心成員"   >中心成員</a></span></li><li   data-index="4"  >		<span  ><a   href="cp_n_19340.html"      title="聯絡方式"   >聯絡方式</a></span></li><li   data-index="5"  >		<span  ><a   href="cp_n_19341.html"      title="中心簽屬MOU"   >中心簽屬MOU</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="2"> <div id="Group_94632_gcRINcrfon" data-Margin_right="" data-sort="" data-bgColor="" data-AddParentGroup="" data-GroupSN="94632" data-WidthDeskTop="" data-anchor="" data-tabType="3" class="group nav" data-index="2" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cp_n_19352.html"      title="中心工作"   >中心工作</a></span></h3></div></div><div class="ct"><div class="in"> <div id="Group_94633_tUSFIcGABf" data-SitesModuleSN="75" data-Margin_right="" data-sort="2" data-bgColor="" data-AddParentGroup="" data-GroupSN="94633" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="list-text nav" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div></li><li data-index="3"> <div id="Group_94624_LVYaFdAKMd" data-Margin_right="" data-sort="" data-bgColor="" data-AddParentGroup="" data-GroupSN="94624" data-WidthDeskTop="" data-anchor="" data-tabType="3" class="group nav" data-index="3" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="News_n_19324_sms_26979.html"      title="最新消息"   >最新消息</a></span></h3></div></div><div class="ct"><div class="in"> <div id="Group_94625_brNGGxYGKq" data-SitesModuleSN="75" data-Margin_right="" data-sort="2" data-bgColor="" data-AddParentGroup="" data-GroupSN="94625" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="list-text nav" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="News_n_19324_sms_26979.html"      title="最新消息"   >最新消息</a></span></li><li   data-index="2"  >		<span  ><a   href="News_n_19325_sms_26986.html"      title="人口相關新聞"   >人口相關新聞</a></span></li><li   data-index="3"  >		<span  ><a   href="News_n_19327_sms_26987.html"      title="近期活動"   >近期活動</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="4"> <div id="Group_94628_aQyTFCQpSh" data-Margin_right="" data-sort="" data-bgColor="" data-AddParentGroup="" data-GroupSN="94628" data-WidthDeskTop="" data-anchor="" data-tabType="3" class="group nav" data-index="4" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/program/"      title="課程資訊"   >課程資訊</a></span></h3></div></div><div class="ct"><div class="in"> <div id="Group_94629_dioLhWDBcy" data-SitesModuleSN="75" data-Margin_right="" data-sort="2" data-bgColor="" data-AddParentGroup="" data-GroupSN="94629" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="list-text nav" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/program/"      title="人口學分學程"   >人口學分學程</a></span></li><li   data-index="2"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/wrp_program/01ann/main.htm"      title="婦女與性別研究學分學程 "   >婦女與性別研究學分學程 </a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="5"> <div id="Group_94630_xoLuqrRCwh" data-Margin_right="" data-sort="" data-bgColor="" data-AddParentGroup="" data-GroupSN="94630" data-WidthDeskTop="" data-anchor="" data-tabType="3" class="group nav" data-index="5" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/jps/index.html"      title="出版品"   >出版品</a></span></h3></div></div><div class="ct"><div class="in"> <div id="Group_94631_ciSdYnjmak" data-SitesModuleSN="75" data-Margin_right="" data-sort="2" data-bgColor="" data-AddParentGroup="" data-GroupSN="94631" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="list-text nav" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="8"><li   data-index="1"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/jps/index.html"      title="人口學刊"   >人口學刊</a></span></li><li   data-index="2"  >		<span  ><a   href="https://jwgs.psc.ntu.edu.tw/"      title="女學學誌"   >女學學誌</a></span></li><li   data-index="3"  >		<span  ><a   href="http://gender.psc.ntu.edu.tw/Gender/page/page_04.php"      title="婦研縱橫"   >婦研縱橫</a></span></li><li   data-index="4"  >		<span  ><a   href="http://homepage.ntu.edu.tw/~r07342001/"      title="線上資源"   >線上資源</a></span></li><li   data-index="5"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/gis.htm"      title="人口地圖集"   >人口地圖集</a></span></li><li   data-index="6"  >		<span  ><a   href="http://www.psc.ntu.edu.tw/censusmap/"      title="台灣戰後人口普查地圖集(1956-2010) "   >台灣戰後人口普查地圖集(1956-2010) </a></span></li><li   data-index="7"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/notices/001/"      title="人口筆記書"   >人口筆記書</a></span></li><li   data-index="8"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/paper.htm"      title="人口中心電子報"   >人口中心電子報</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="6"> <div id="Group_105229_pCokdrAbyp" data-Margin_right="" data-sort="" data-bgColor="" data-AddParentGroup="" data-GroupSN="105229" data-WidthDeskTop="" data-anchor="" data-tabType="3" class="group nav" data-index="6" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cl_n_21391.html"      title="獎助金"   >獎助金</a></span></h3></div></div><div class="ct"><div class="in"> <div id="Group_105230_LosoWLSFHa" data-SitesModuleSN="75" data-Margin_right="" data-sort="2" data-bgColor="" data-AddParentGroup="" data-GroupSN="105230" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="list-text nav" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  >		<span  ><a   href="001/Upload/372/relfile/0/21392/b88487a8-167f-49e4-8763-f8d6d3b15239.pdf"      title="[另開新視窗]申請辦法.pdf"   target="_blank"  >申請辦法</a></span></li><li   data-index="2"  >		<span  ><a   href="001/Upload/372/relfile/0/21393/6da75dd4-51ca-46db-9496-819769054df8.pdf"      title="[另開新視窗]歷年獲獎名單.pdf"   target="_blank"  >歷年獲獎名單</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="7"> <div id="Group_106515_uPsnxuorgM" data-Margin_right="" data-sort="" data-bgColor="" data-AddParentGroup="" data-GroupSN="106515" data-WidthDeskTop="" data-anchor="" data-tabType="3" class="group nav" data-index="7" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cl_n_21762.html"      title="相關網站"   >相關網站</a></span></h3></div></div><div class="ct"><div class="in"> <div id="Group_106516_fYjeemtMmV" data-SitesModuleSN="75" data-Margin_right="" data-sort="2" data-bgColor="" data-AddParentGroup="" data-GroupSN="106516" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="list-text nav" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-child="1" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  >		<span  ><a   href="cp_n_21765.html"      title="相關系所"   >相關系所</a></span></li><li   data-index="2"  >		<span  ><a   href="cp_n_21766.html"      title="政府單位"   >政府單位</a></span></li><li   data-index="3"  >		<span  ><a   href="cp_n_21767.html"      title="研究機構"   >研究機構</a></span></li><li   data-index="4"  >		<span  ><a   href="cp_n_21768.html"      title="國際組織"   >國際組織</a></span></li><li   data-index="5"  >		<span  ><a   href="cp_n_21769.html"      title="國際訪客資源"   >國際訪客資源</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li></ul></div></div></div></div></div></div></div></div></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div id="Group_96854_ysBoiCAYEh" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="96854" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="true" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="3" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div id="Group_96855_HTBwoHmvjy" data-Margin_right="" data-sort="2" data-bgColor="" data-AddParentGroup="" data-GroupSN="96855" data-WidthDeskTop="" data-anchor="" data-tabType="1" class="group default" data-index="1" data-Margin_DefaultSetting="false" data-type="1" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="" data-child="2" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"> <div id="Group_96856_MGyrnGSstq" data-index="1" data-SitesModuleSN="67" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="96856" data-WidthDeskTop="60" data-anchor="" data-tabType="0" class="group-list major-slider" data-func="{&#39;picSlider&#39;:{&#39;auto&#39;:true,&#39;delay&#39;:5000,&#39;speed&#39;:1500,&#39;animateType&#39;:0,&#39;sliderType&#39;:0,&#39;sliceLeng&#39;:10}}" data-Margin_DefaultSetting="false" data-type="4" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="5" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li data-index="1"> <div class="simple-pic default" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span style="background-image: url('001/Upload/372/relpic/26980/64135/ac1714aa-2e5d-4755-b7bf-12bde0eef740.png');" ><a   href="https://www.psc.ntu.edu.tw/News_Content_n_19324_sms_26979_s_64133.html"   title="線上論壇：Social and Economic Impacts of COVID-19 to East and Southeast Asia"   ><img src="001/Upload/372/relpic/26980/64135/ac1714aa-2e5d-4755-b7bf-12bde0eef740.png" alt="線上論壇：Social and Economic Impacts of COVID-19 to East and Southeast Asia" title="線上論壇：Social and Economic Impacts of COVID-19 to East and Southeast Asia"  /></a></span></div></div></div></div></li><li data-index="2"> <div class="simple-pic default" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span style="background-image: url('001/Upload/372/relpic/26980/57447/99c1d99b-ac60-4502-a354-527ec23d5c05.jpg');" ><a   href="https://www.psc.ntu.edu.tw/News_Content_n_19324_sms_26979_s_57446.html"   title="Alison Brysk教授演講"   ><img src="001/Upload/372/relpic/26980/57447/99c1d99b-ac60-4502-a354-527ec23d5c05.jpg" alt="Alison Brysk教授演講" title="Alison Brysk教授演講"  /></a></span></div></div></div></div></li><li data-index="3"> <div class="simple-pic default" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span style="background-image: url('001/Upload/372/relpic/26980/29469/42499ace-d407-4b6d-907b-c4605c47008c.jpg');" ><a   href="test3"   title="test3"   ><img src="001/Upload/372/relpic/26980/29469/42499ace-d407-4b6d-907b-c4605c47008c.jpg" alt="test3" title="test3"  /></a></span></div></div></div></div></li><li data-index="4"> <div class="simple-pic default" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span style="background-image: url('001/Upload/372/relpic/26980/29451/4974260f-4894-461d-9727-86458dd6376e.jpg');" ><a   href="test2"   title="test2"   ><img src="001/Upload/372/relpic/26980/29451/4974260f-4894-461d-9727-86458dd6376e.jpg" alt="test2" title="test2"  /></a></span></div></div></div></div></li><li data-index="5"> <div class="simple-pic default" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span style="background-image: url('001/Upload/372/relpic/26980/29339/bad51e89-9043-493a-8c6c-ee1e4c090242.jpg');" ><a   href="test"   title="test"   ><img src="001/Upload/372/relpic/26980/29339/bad51e89-9043-493a-8c6c-ee1e4c090242.jpg" alt="test" title="test"  /></a></span></div></div></div></div></li></ul></div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  class="more"  >		<span  ><a   href="News_Link2_n_19317_sms_26980.html"   title="更多首頁大圖"   target="_self"  >更多</a></span></li></ul>
+</div></div></div></div> <div id="Group_96857_JYxIFuNWdD" data-SitesModuleSN="1" data-Margin_right="30" data-sort="4" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="96857" data-WidthDeskTop="40" data-anchor="" data-tabType="0" class="group-list slider" data-index="2" data-Margin_DefaultSetting="true" data-type="4" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="60" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="30" data-child="1" data-Margin_Top="30"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a    title="最新消息"   >最新消息</a></span></h3></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li data-index="1"> <div class="group-list message" data-index="1" data-type="4" data-child="6"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li data-index="1"> <div class="simple-text message" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span  ><a   href="News_Content_n_19324_s_70639.html"   title="aaa"   > <i class="mark">2020-09-23</i>aaa</a></span></div></div></div></div></li><li data-index="2"> <div class="simple-text message" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span  ><a   href="News_Content_n_19324_s_64133.html"   title="線上論壇：Social and Economic Impacts of COVID-19 to East and Southeast Asia"   > <i class="mark">2020-06-02</i>線上論壇：Social and Economic Impacts of COVID-19 to East and Southeast Asia</a></span></div></div></div></div></li><li data-index="3"> <div class="simple-text message" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span  ><a   href="News_Content_n_19324_s_57446.html"   title="Alison Brysk教授演講How Have Women’s Movement Worldwide Mobilized Against Gender Violence?"   > <i class="mark">2019-10-16</i>Alison Brysk教授演講How Have Women’s Movement Worldwide Mobilized Against Gender Violence?</a></span></div></div></div></div></li><li data-index="4"> <div class="simple-text message" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span  ><a   href="News_Content_n_19324_s_29441.html"   title="[中心消息]  108學年度「人口學程」招生說明會"   > <i class="mark">2019-05-30</i>[中心消息]  108學年度「人口學程」招生說明會</a></span></div></div></div></div></li><li data-index="5"> <div class="simple-text message" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span  ><a   href="News_Content_n_19324_s_29440.html"   title="2019年08月5~6日 「人口數據科學」工作坊：QGIS的人口地圖繪製"   > <i class="mark">2019-05-30</i>2019年08月5~6日 「人口數據科學」工作坊：QGIS的人口地圖繪製</a></span></div></div></div></div></li><li data-index="6"> <div class="simple-text message" data-index="6" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">		<span  ><a   href="https://docs.google.com/forms/d/e/1FAIpQLSdz_tPP4TxlKanwZZ5pwyZXI3DYNtaJ0Q8aWWUxO6kMFk6u4Q/viewform?c=0&w=1"   title="[中心出版]人口筆記書發售中！ 【訂購表單】"   > <i class="mark">2019-05-30</i>[中心出版]人口筆記書發售中！ 【訂購表單】</a></span></div></div></div></div></li></ul></div></div></div></div></li></ul></div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  class="more"  >		<span  ><a   href="News_n_19324_sms_26979.html"   title="更多最新消息"   target="_self"  >更多</a></span></li></ul>
+</div></div></div></div></div></div></div></div> <div id="Group_96858_jFJhuEvHHs" data-Margin_right="0" data-sort="4" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="96858" data-WidthDeskTop="100" data-anchor="" data-tabType="1" class="group default" data-index="2" data-Margin_DefaultSetting="false" data-type="1" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_96859_ixkycuWumE" data-index="1" data-SitesModuleSN="5" data-Margin_right="15" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="96859" data-WidthDeskTop="40" data-anchor="" data-tabType="0" class="group-list slider" data-func="{&#39;fadeSlider&#39;:{&#39;auto&#39;:true,&#39;delay&#39;:5000,&#39;speed&#39;:300}}" data-Margin_DefaultSetting="true" data-type="4" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="15" data-MenuWidth="" data-isgroup="true" data-setLen="6" data-Margin_bottom="15" data-child="2" data-Margin_Top="15"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a    title="人口相關新聞"   >人口相關新聞</a></span></h3></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li data-index="1"> <div class="list-text link" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  >		<span  ><a   href="https://global.udn.com/global_vision/story/8662/4266047"   title="#強制退休制度 是讓年長學者為後進「適時騰出機會」，還是淪為學術職場的「年齡歧視」？"   >#強制退休制度 是讓年長學者為後進「適時騰出機會」，還是淪為學術職場的「年齡歧視」？</a></span></li><li   data-index="2"  >		<span  ><a   href="http://technews.tw/2020/01/13/finland-use-technology-to-solve-aging-society/"   title="從芬蘭經驗，看如何運用科技面對老化問題"   >從芬蘭經驗，看如何運用科技面對老化問題</a></span></li><li   data-index="3"  >		<span  ><a   href="https://www.bbc.com/zhongwen/trad/world-51136749"   title="日本環境大臣小泉進次郎宣佈請兩周陪產假，引發日本社會關注"   >日本環境大臣小泉進次郎宣佈請兩周陪產假，引發日本社會關注</a></span></li><li   data-index="4"  >		<span  ><a   href="https://www.cna.com.tw/news/aopl/202001080146.aspx"   title="澳洲遭野火重創，造成24人喪命、超過1030萬公頃土地遭燒毀"   >澳洲遭野火重創，造成24人喪命、超過1030萬公頃土地遭燒毀</a></span></li><li   data-index="5"  >		<span  ><a   href="https://www.storm.mg/article/1905054"   title="少子化問題可能解方：日本政府欲推行新政策，鼓勵男性公務員休育兒假"   >少子化問題可能解方：日本政府欲推行新政策，鼓勵男性公務員休育兒假</a></span></li><li   data-index="6"  >		<span  ><a   href=" https://vision.udn.com/vision/story/120879/4251847"   title="臺灣農業世代斷層嚴重，勞動力從哪來？"   >臺灣農業世代斷層嚴重，勞動力從哪來？</a></span></li></ul>
+</div></div></div></div></li><li data-index="2"> <div class="list-text link" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  >		<span  ><a   href="https://technews.tw/2019/12/26/global-demand-for-food-will-rise/"   title="過去100年全球人口數持續增加，身體質量指數（BMI）也呈現上升趨勢"   >過去100年全球人口數持續增加，身體質量指數（BMI）也呈現上升趨勢</a></span></li><li   data-index="2"  >		<span  ><a   href="https://opinion.cw.com.tw/blog/profile/52/article/8676"   title="透過對話，梳理對高齡生活的想像：青銀共居是否必要？直接發錢給家庭照顧者不一定可解決長照問題？"   >透過對話，梳理對高齡生活的想像：青銀共居是否必要？直接發錢給家庭照顧者不一定可解決長照問題？</a></span></li><li   data-index="3"  >		<span  ><a   href="https://www.upmedia.mg/news_info.php?SerialNo=74650"   title="歐洲法院檢察長點名匈牙利、波蘭、捷克三國，無合法理由拒絕難民配額計畫"   >歐洲法院檢察長點名匈牙利、波蘭、捷克三國，無合法理由拒絕難民配額計畫</a></span></li><li   data-index="4"  >		<span  ><a   href="https://news.pts.org.tw/article/459653"   title="全球難民人數創歷史新高，聯合國秘書長呼籲各國承擔責任"   >全球難民人數創歷史新高，聯合國秘書長呼籲各國承擔責任</a></span></li><li   data-index="5"  >		<span  ><a   href="http://research.sinica.edu.tw/teenagers-typ-youth-project-family/"   title="從中研院研究，看親子關係和家庭結構如何影響孩子結婚決定？"   >從中研院研究，看親子關係和家庭結構如何影響孩子結婚決定？</a></span></li><li   data-index="6"  >		<span  ><a   href="https://news.ltn.com.tw/news/world/breakingnews/3011505"   title="2020全球性別差距報告公布，職場性別平等還要再等兩世紀"   >2020全球性別差距報告公布，職場性別平等還要再等兩世紀</a></span></li></ul>
+</div></div></div></div></li></ul></div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  class="more"  >		<span  ><a   href="News_n_19325_sms_26986.html"   title="更多人口相關新聞"   target="_self"  >更多</a></span></li></ul>
+</div></div></div></div> <div id="Group_96860_hBEMqrxsGx" data-SitesModuleSN="1" data-Margin_right="20" data-sort="4" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="96860" data-WidthDeskTop="60" data-anchor="" data-tabType="0" class="area-customize news-card" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="3" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a    title="學術活動"   >學術活動</a></span></h4></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li data-index="1" > 	<a class="div" target="" href="News_Content_n_19327_s_29449.html"> 		<div class="label"> 			<div class="mark">2019-05-30</div> 			<div class="unit"></div> 		</div> 		<div class="caption">「人口老化、家庭與照護」學術研討會</div> 		<div class="p"> 			<p>
+	
+		
+			
+			【專題演講】4月19日（五）&quot; Trends, Challenges, and Research on Elderly Care in Asia.&quot;　 Wei-Jun Jean Yeung教授（新加坡大學社會學系教授、亞洲人口學會諮詢委員）、4/20日（六）&quot;台灣長照政策之發展: 高齡社會的因應對策&quot;呂寶靜教授（政治大學社會工作研究所教授）&nbsp;
+			【場次】&nbsp;
+			．婚姻與生育&nbsp;
+			．健康與醫療&nbsp;
+			．2020人口及住宅普查&nbsp;
+			．Ageing, Mortality and Care&nbsp;
+			．家庭、居住安排與福祉&nbsp;
+			．Labor Migration in Asia&nbsp;
+			．老人健康與照護&nbsp;
+			．遷移、環境與福祉&nbsp;
+			．Migration and Wellbeing in Asia&nbsp;
+			．新人發聲&nbsp;
+			．生育行為與代間關係&nbsp;
+			．就醫行為&nbsp;
+			．婚姻態度與行為&nbsp;
+			．台灣原住民人口及結構變動&nbsp;
+			．婚姻、子女與教養&nbsp;
+			．家庭問題與居家療護&nbsp;
+			報名費用 : 新臺幣500元整，臺灣人口學會會員無須繳費。&nbsp;
+			本研討會可列入公務人員終身學習時數
+			
+		
+	
+
+
+
+	
+		
+			
+		
+	
+
+</p> 		</div> 	</a> </li><li data-index="2" > 	<a class="div" target="" href="News_Content_n_19327_s_29450.html"> 		<div class="label"> 			<div class="mark">2019-05-30</div> 			<div class="unit"></div> 		</div> 		<div class="caption">本中心與臺灣人口學會邀請新加坡大學社會學系Wei-Jun Jean Yeung教授來臺演講</div> 		<div class="p"> 			<p>
+	
+		
+			
+			Wei-Jun Jean Yeung教授目前任教於新加坡大學社會系，為亞洲人口學會（Asian Population Association）諮詢委員，長期關注人口相關議題，諸如人口老化、家庭、青少年發展、移民與跨國婚姻等，特別是亞洲各國的人口老化趨勢以及新加坡的人口問題。
+			
+		
+	
+
+
+
+	
+		
+			
+			&nbsp;
+
+			
+			此次Wei-Jun Jean Yeung教授來臺，將進行2場演講。&nbsp;
+			第一場：2019年4月18日（四）14:30-16:30&nbsp;
+			講題：&ldquo;Families in Southeast and South Asia.&rdquo;&nbsp;
+			地點：中央研究院社會學研究所&nbsp;
+			主辦單位：中央研究院社會學研究所、國立臺灣大學人口與性別研究中心、臺灣人口學會&nbsp;
+			第二場：2019年4月19日（五）9:20-10:40&nbsp;
+			2019臺灣人口學會年會專題演講&nbsp;
+			講題：&ldquo;Trends, Challenges, and Research on Elderly Care in Asia.&rdquo;&nbsp;
+			地點：私立輔仁大學濟時樓9樓國際會議廳&nbsp;
+			主辦單位：臺灣人口學會、私立輔仁大學、國立臺灣大學人口與性別研究中心
+
+			
+			
+		
+	
+
+</p> 		</div> 	</a> </li><li data-index="3" > 	<a class="div" target="" href="News_Content_n_19327_s_29448.html"> 		<div class="label"> 			<div class="mark">2019-05-30</div> 			<div class="unit"></div> 		</div> 		<div class="caption">打破沉默，揭發隱匿--面對校園性犯罪之台日經驗交流 研討會</div> 		<div class="p"> 			<p>主辦：人本教育基金會(https://www.facebook.com/hef.tw/)&nbsp;
+● 合辦：臺灣大學人口與性別研究中心&nbsp;
+● 協辦：高雄師範大學教育學系&nbsp;
+● 時間：&nbsp;
+台北場 2019/4/13(六) 9時-17時 (共分三場次進行)&nbsp;
+高雄場 2019/4/14(日) 9時-12時&nbsp;
+● 地點：&nbsp;
+台北場 台灣大學博雅館103教室&nbsp;
+高雄場 高雄師範大學行政大樓10樓國際會議廳&nbsp;
+● 其他重要事項：&nbsp;
+1. 兩場次皆可協助核發教師研習時數(以簽到退時間計算)&nbsp;
+&gt;&gt;研習網課程代碼：2587311(台北)、2587553(高雄)&nbsp;
+2. 兩場地皆備有飲水機，可自行準備環保杯！&nbsp;
+3. 即時訊息將刊登於Facebook活動頁：http://bit.ly/2CednX8&nbsp;
+4. 參加研討會不需費用，但接受樂捐以攤平場地費等支出&nbsp;
+● 更多詢問請洽 ：&nbsp;
+02-23670151#117 / pinlin@hef.org.tw / 林小姐
+
+關於這場研討會：
+
+根據教育部統計，105年師對生之性平通報數量就有362件，因此被解聘的老師有60人；106年的通報量有544件，被解聘的老師有65人。校園性犯罪事件不是偶一，不是特例，而是我們的體制、社會、文化、所有應該保護孩子的大人，集體縱放了這一道道在孩子身上的傷痕。&nbsp;
+
+日本一位長期追蹤校園性犯罪事件、親訪性犯罪受害人，並將許多相關的訪談與研究資料作成《被隱匿的校園性犯罪》一書的記者，池谷孝司，在書中序言的第一句話：「學校怎麼可以放縱這種事情！」&nbsp;
+
+學校當然不應該發生這樣的事情，然而，是什麼樣的體制、環境、文化、人性，讓這些事情幾十件、幾百件的發生？甚至據105年教育部的統計資料，平均每天發生1.2起校園性侵害事件？&nbsp;
+
+池谷先生在書中揭露的資訊，可以看出日本的校園性犯罪情況與我們有許多的近似性，也仍在致力改善這些問題的路上。&nbsp;
+
+於此，在我們偶然認識到池谷先生後，便決定邀請他來台和我們一同研討校園性犯罪的成因，以及改善校園性犯罪問題的方法。也希望透過這場研討會，邀請所有的參與者將議題、意識與行動擴散出去。這個社會的孩子，就需要由整個社會的力量來保護！&nbsp;
+
+另外我們也邀請日本「防止校園性騷擾全國網絡」的代表，龜井明子女士來台，還有許多國內的教授學者。在這場會上，我們將有具體的產出，能讓大家在研討會結束後，在思考上或行動上能有持續受用的收穫。&nbsp;
+
+誠摯邀請您參與這場座談會，共商大計，一起打破沉默、揭發隱匿，重建更平等、更能守護兒童與受害者之校園文化。
+</p> 		</div> 	</a> </li></ul></div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  class="more"  >		<span  ><a   href="News_n_19327_sms_26987.html"   title="更多近期活動"   target="_self"  >更多</a></span></li></ul>
+</div></div></div></div></div></div></div></div> <div id="Group_96861_GIYJCkynpu" data-Margin_right="0" data-sort="6" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="96861" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group default" data-index="3" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;close&#39;,&#39;btnActiveText&#39;:&#39;open&#39;,&#39;focusActive&#39;:false}}" data-index="3" data-type="3" data-child="2"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a    title="選單"   >選單</a></span></h3></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4" data-child="7"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="7"><li data-index="1"> <div class="group nav" data-index="1" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cp_n_19332.html"      title="單位簡介"   >單位簡介</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  >		<span  ><a   href="cp_n_19332.html"      title="中心簡介"   >中心簡介</a></span></li><li   data-index="2"  >		<span  ><a   href="cp_n_19337.html"      title="中心架構"   >中心架構</a></span></li><li   data-index="3"  >		<span  ><a   href="cp_n_19338.html"      title="中心成員"   >中心成員</a></span></li><li   data-index="4"  >		<span  ><a   href="cp_n_19340.html"      title="聯絡方式"   >聯絡方式</a></span></li><li   data-index="5"  >		<span  ><a   href="cp_n_19341.html"      title="中心簽屬MOU"   >中心簽屬MOU</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="2"> <div class="group nav" data-index="2" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cp_n_19352.html"      title="中心工作"   >中心工作</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div></li><li data-index="3"> <div class="group nav" data-index="3" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="News_n_19324_sms_26979.html"      title="最新消息"   >最新消息</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="News_n_19324_sms_26979.html"      title="最新消息"   >最新消息</a></span></li><li   data-index="2"  >		<span  ><a   href="News_n_19325_sms_26986.html"      title="人口相關新聞"   >人口相關新聞</a></span></li><li   data-index="3"  >		<span  ><a   href="News_n_19327_sms_26987.html"      title="近期活動"   >近期活動</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="4"> <div class="group nav" data-index="4" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/program/"      title="課程資訊"   >課程資訊</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/program/"      title="人口學分學程"   >人口學分學程</a></span></li><li   data-index="2"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/wrp_program/01ann/main.htm"      title="婦女與性別研究學分學程 "   >婦女與性別研究學分學程 </a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="5"> <div class="group nav" data-index="5" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/jps/index.html"      title="出版品"   >出版品</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="8"><li   data-index="1"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/jps/index.html"      title="人口學刊"   >人口學刊</a></span></li><li   data-index="2"  >		<span  ><a   href="https://jwgs.psc.ntu.edu.tw/"      title="女學學誌"   >女學學誌</a></span></li><li   data-index="3"  >		<span  ><a   href="http://gender.psc.ntu.edu.tw/Gender/page/page_04.php"      title="婦研縱橫"   >婦研縱橫</a></span></li><li   data-index="4"  >		<span  ><a   href="http://homepage.ntu.edu.tw/~r07342001/"      title="線上資源"   >線上資源</a></span></li><li   data-index="5"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/gis.htm"      title="人口地圖集"   >人口地圖集</a></span></li><li   data-index="6"  >		<span  ><a   href="http://www.psc.ntu.edu.tw/censusmap/"      title="台灣戰後人口普查地圖集(1956-2010) "   >台灣戰後人口普查地圖集(1956-2010) </a></span></li><li   data-index="7"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/notices/001/"      title="人口筆記書"   >人口筆記書</a></span></li><li   data-index="8"  >		<span  ><a   href="https://www.psc.ntu.edu.tw/paper.htm"      title="人口中心電子報"   >人口中心電子報</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="6"> <div class="group nav" data-index="6" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cl_n_21391.html"      title="獎助金"   >獎助金</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  >		<span  ><a   href="001/Upload/372/relfile/0/21392/b88487a8-167f-49e4-8763-f8d6d3b15239.pdf"      title="[另開新視窗]申請辦法.pdf"   target="_blank"  >申請辦法</a></span></li><li   data-index="2"  >		<span  ><a   href="001/Upload/372/relfile/0/21393/6da75dd4-51ca-46db-9496-819769054df8.pdf"      title="[另開新視窗]歷年獲獎名單.pdf"   target="_blank"  >歷年獲獎名單</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li><li data-index="7"> <div class="group nav" data-index="7" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><h3   data-index="0"  >		<span  ><a   href="cl_n_21762.html"      title="相關網站"   >相關網站</a></span></h3></div></div><div class="ct"><div class="in"> <div class="list-text nav" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="5"><li   data-index="1"  >		<span  ><a   href="cp_n_21765.html"      title="相關系所"   >相關系所</a></span></li><li   data-index="2"  >		<span  ><a   href="cp_n_21766.html"      title="政府單位"   >政府單位</a></span></li><li   data-index="3"  >		<span  ><a   href="cp_n_21767.html"      title="研究機構"   >研究機構</a></span></li><li   data-index="4"  >		<span  ><a   href="cp_n_21768.html"      title="國際組織"   >國際組織</a></span></li><li   data-index="5"  >		<span  ><a   href="cp_n_21769.html"      title="國際訪客資源"   >國際訪客資源</a></span></li></ul>
+</div></div></div></div></div></div></div></div></li></ul></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-pic icon" data-index="1" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></h4></div></div><div class="ct"><div class="in"></div></div></div></div> <div class="simple-text update-time" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><h4   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></h4></div></div><div class="ct"><div class="in"><span>2020-09-23</span></div></div></div></div> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in">
+<div class="ft-info">
+<div class="ft-logo"><img alt="" src="001/Upload/372/ckfile/55d9bf01-7dca-4122-b4ea-ce507ca83d6f.png" style="width: 300px; height: 90px;" />&nbsp;</div>
+
+<div class="ft-ct">
+<p style="border-bottom: 1px solid #ddd;padding-bottom: 8px;">Copyright &copy; 2019 國立台灣大學人口與性別中心</p>
+
+<p>電話：+886-2-3366-3400</p>
+
+<p>Fax：+886-2-2363-9565</p>
+
+<p>mail：psc@ntu.edu.tw</p>
+
+<p>地址 : 10617 臺北市羅斯福路四段一號</p>
+
+<p>No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan (R.O.C.)</p>
+</div>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A0EEDFAD" />
+</div></form>
+    <script src="js/require.js"></script>
+    <script>        requirejs.config({ baseUrl: 'js' });
+        requirejs(['main'], function (func) {
+            func();
+        });
+    </script>
+      <a style="display:none" href="/favicon.ico"></a>
+</body>
+</html>
+
